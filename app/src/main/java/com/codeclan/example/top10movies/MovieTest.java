@@ -26,5 +26,37 @@ public class MovieTest {
         assertEquals("Me, Myself & Irene", movie1.getTitle());
     }
 
+    @Test
+    public void testGetGenre() {
+        assertEquals("Comedy", movie1.getGenre());
+    }
+
+    @Test
+    public void testGetCurrentRanking() {
+        assertEquals(1, movie1.getCurrentranking());
+    }
+
+    @Test
+    public void testSetTitle() {
+        movie1.setTitle("Snatch");
+        assertEquals("Snatch", movie1.getTitle());
+    }
+
+    @Test
+    public void testSetGenre() {
+        movie1.setGenre("RomCom");
+        assertEquals("RomCom", movie1.getGenre());
+    }
+
+    @Test
+    public void testSetCurrentRanking() {
+        movie1.setCurrentranking(3);
+        assertEquals(3, movie1.getCurrentranking());
+    }
+
+    @Test
+    public void testToString() {
+        assertEquals("Title: Me, Myself & Irene, Genre: Comedy, CurrentRanking: 1", movie1.toString());
+    }
 }
 

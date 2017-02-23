@@ -4,11 +4,12 @@ package com.codeclan.example.top10movies;
  * Created by user on 23/02/2017.
  */
 
-public class Movie {
-    private int id;
-    private String title;
-    private String genre;
-    private int currentranking;
+
+    public class Movie {
+        private int id;
+        private String title;
+        private String genre;
+        private int currentranking;
 
 
     public Movie(String title, String genre, int currentranking) {
@@ -39,5 +40,10 @@ public class Movie {
 
     public void setCurrentranking(int currentranking) {
         this.currentranking = currentranking;
+    }
+
+    @Override
+    public String toString() {
+        return "Title: Me, Myself & Irene, Genre: Comedy, CurrentRanking: 1";
     }
 }
